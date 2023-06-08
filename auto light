@@ -1,0 +1,24 @@
+import java.util.Random;
+
+public class AutoLightSystem {
+    public static void main(String[] args) {
+        Random random = new Random();
+        boolean isDark = random.nextBoolean(); // Simulating darkness
+
+        if (isDark) {
+            turnOnLights();
+        } else {
+            turnOffLights();
+        }
+    }
+
+    public static void turnOnLights() {
+        System.out.println("Lights turned on.");
+        // Additional code to control the lights
+    }
+
+    public static void turnOffLights() {
+        System.out.println("Lights turned off.");
+        // Additional code to control the lights
+    }
+}
